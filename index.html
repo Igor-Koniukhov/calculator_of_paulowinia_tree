@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+			name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<title>Calculator</title>
+</head>
+<body>
+<section>
+	<div class="container calc">
+		<h3>Калькулятор рассады Павловнии</h3>
+		<div class="row">
+			<div class="col-md-6">
+				<div id="calc">
+
+					<div class="form-group">
+						<label for="tree-spice">Выберите вид для посадки</label>
+						<select class="form-control" id="tree-spice">
+							<option selected>Вид дерева</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="method">Метод высадки</label>
+						<select class="form-control" id="method">
+							<option>Размер сетки посадки</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="width">Ширина участка, м</label>
+						<input class="form-control" id="width" min="1" size="3" type="number" value="4">
+					</div>
+					<div class="form-group">
+						<label for="length">Длина участка, м</label>
+						<input class="form-control" id="length" min="1" size="3" type="number" value="4">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<table class="table">
+					<thead>
+					<tr>
+						<th>Наименование</th>
+						<th>Параметр</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>Выбранный сорт</td>
+						<td class="tree-spice">-</td>
+					</tr>
+					<tr>
+						<td>Площадь участка</td>
+						<td class="square">-</td>
+					</tr>
+					<tr>
+						<td>Кол-во посадочного материала</td>
+						<td class="qnt">-</td>
+					</tr>
+					<tr>
+						<td>Цена Саженца</td>
+						<td class="price">-</td>
+					</tr>
+					<tr>
+						<td>Общая сумма</td>
+						<td class="sum">-</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
